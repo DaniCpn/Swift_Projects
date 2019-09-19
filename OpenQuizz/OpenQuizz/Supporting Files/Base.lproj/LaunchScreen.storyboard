@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-Jb-jwm">
+                                <rect key="frame" x="67.5" y="189" width="240" height="289"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Btc-Jb-jwm" secondAttribute="height" multiplier="240:289" id="5G3-xc-iNi"/>
+                                    <constraint firstAttribute="height" constant="289" id="Rcw-f0-KCc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="jOH-KA-0Sf"/>
+                                    <constraint firstAttribute="width" constant="240" id="yws-XI-Clu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35831090807914734" green="0.41758078336715698" blue="0.50197261571884155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Btc-Jb-jwm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ENO-kS-yCK"/>
+                            <constraint firstItem="Btc-Jb-jwm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uAe-GC-EE9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Loading" width="241" height="290"/>
+    </resources>
+</document>

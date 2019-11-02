@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ComparImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ComparImage Illu NB" translatesAutoresizingMaskIntoConstraints="NO" id="NsO-x0-zEf">
+                                <rect key="frame" x="31" y="52" width="352" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NsO-x0-zEf" secondAttribute="height" multiplier="1:1" id="if8-r6-rII"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ComparImage Illu Color" translatesAutoresizingMaskIntoConstraints="NO" id="L6A-vJ-q5V">
+                                <rect key="frame" x="31" y="433" width="352" height="352"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L6A-vJ-q5V" secondAttribute="height" multiplier="1:1" id="tyB-Pt-oYV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX0-Fz-wTO">
+                                <rect key="frame" x="94.5" y="800" width="225" height="42"/>
+                                <color key="backgroundColor" red="0.34241300819999998" green="0.41808691619999999" blue="0.50959968570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Z2Y-Ww-AAn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="rSq-bj-84X"/>
+                                </constraints>
+                                <state key="normal" title="Nouvelles images">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74834197759999999" green="0.76838296650000004" blue="0.78915339709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rX0-Fz-wTO" firstAttribute="centerX" secondItem="Ttz-oL-vEP" secondAttribute="centerX" id="LvD-XI-2yY"/>
+                            <constraint firstItem="NsO-x0-zEf" firstAttribute="centerX" secondItem="Ttz-oL-vEP" secondAttribute="centerX" id="PA6-hU-sNT"/>
+                            <constraint firstItem="NsO-x0-zEf" firstAttribute="top" secondItem="Ttz-oL-vEP" secondAttribute="top" constant="8" id="Q6I-HD-BWT"/>
+                            <constraint firstItem="Ttz-oL-vEP" firstAttribute="bottom" secondItem="rX0-Fz-wTO" secondAttribute="bottom" constant="20" id="T5g-u5-eNx"/>
+                            <constraint firstItem="L6A-vJ-q5V" firstAttribute="top" secondItem="NsO-x0-zEf" secondAttribute="bottom" constant="29" id="YEY-fP-Vli"/>
+                            <constraint firstItem="L6A-vJ-q5V" firstAttribute="centerX" secondItem="Ttz-oL-vEP" secondAttribute="centerX" id="ZVy-Y4-nGp"/>
+                            <constraint firstItem="rX0-Fz-wTO" firstAttribute="top" secondItem="L6A-vJ-q5V" secondAttribute="bottom" constant="15" id="jmn-6k-cmC"/>
+                            <constraint firstItem="L6A-vJ-q5V" firstAttribute="height" secondItem="NsO-x0-zEf" secondAttribute="height" id="quJ-dE-aze"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ttz-oL-vEP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ComparImage Illu Color" width="300" height="300"/>
+        <image name="ComparImage Illu NB" width="300" height="300"/>
+    </resources>
+</document>
